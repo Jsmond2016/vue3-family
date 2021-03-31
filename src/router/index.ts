@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/home/index.vue";
 
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -11,12 +10,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/profile",
     name: "Profile",
-    component: () => import(/* webpackChunkName: "about" */ "../views/profile/index.vue"),
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/profile/index.vue"),
   },
   {
     path: "/course",
     name: "Course",
-    component: () => import(/* webpackChunkName: "about" */ "../views/course/index.vue"),
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/course/index.vue"),
   },
   {
     path: "/about",

@@ -1,6 +1,6 @@
 <template>
   <div class="home-header">
-    <img src="@/assets/logo.png">
+    <img src="@/assets/logo.png" />
     <van-dropdown-menu>
       <van-dropdown-item v-model="state.value1" :options="option1" />
     </van-dropdown-menu>
