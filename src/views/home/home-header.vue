@@ -48,12 +48,15 @@ export default defineComponent({
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   img {
     height: 50px;
   }
+  .van-dropdown-menu__bar {
+    background: #2a2a2a;
+  }
   .van-dropdown-menu__title {
-    color: #fff;
+    color: white;
   }
 }
 </style>
