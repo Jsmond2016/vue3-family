@@ -8,7 +8,7 @@
       :thumb="ll.poster"
     >
       <template #tags>
-        <van-tag plain type="danger"></van-tag>
+        <van-tag plain type="danger">{{ll.category}}</van-tag>
       </template>
     </van-card>
   </div>

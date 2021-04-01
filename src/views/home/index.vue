@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    {{ category }}
     <HomeHeader
       :category="category"
       @setCurrentCategory="setCurrentCategory"
@@ -27,6 +26,7 @@
   bottom: 50px;
   width: 100%;
   overflow-y: scroll;
+  z-index: -1;
 }
 </style>
 <script lang="ts">
