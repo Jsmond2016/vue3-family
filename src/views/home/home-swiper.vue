@@ -11,7 +11,7 @@
 <script lang="ts">
 import { useStore } from "vuex";
 import { computed, defineComponent } from "vue";
-import { Types } from "@/store/action-types";
+import * as Types from "@/store/action-types";
 
 export default defineComponent({
   // 异步的 async 只能和 suspense 结合使用
@@ -21,7 +21,7 @@ export default defineComponent({
       return store.state.home.sliders;
     });
     if (!sliderList.value.length) {
-      await store.dispatch(`/home/${Types.SET_SLIDER_LIST}`);
+      await store.dispatch(`home/${Types.SET_SLIDER_LIST}`);
     }
 
     return {
